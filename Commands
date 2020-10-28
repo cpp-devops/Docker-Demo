@@ -90,6 +90,9 @@ HEALTHCHECK: speciry a command to run in order to perform a custom health check 
 =================================
 
 
+Docker build –f dockerfile  -t newimagename:v2 .     (dir path “.” means context to current) 
+
+
 
 
 
