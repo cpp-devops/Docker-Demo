@@ -1,1 +1,1 @@
-# Docker Fundamentals Session for 30th Oct 2020
+# Docker Fundamentals Session for 30 Oct 2020
