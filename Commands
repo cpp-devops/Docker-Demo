@@ -1,0 +1,36 @@
+Service docker status 
+Service docker stop 
+Service docker start 
+Service docker restart 
+docker pull tomcat (latest) 
+docker pull tomcat:jdk11-openjdk-slim (specific tag) 
+docker image ls ( list images) 
+docker pull dockerdemo20/ubuntu_v1
+Docker pull nginx 
+Docker pull httpd 
+docker run –d –P tomcat:latest (detached Mode) 
+docker run --name chandranginx  -d –P tomcat  ( setting customized name )
+docker ps  ( to check running containers) 
+docker ps -a ( list stopped & running containers )  
+Docker run –it centos /bin/bash   ( it will run container and go inside and land on bash terminal) 
+Ctrl pq  (graceful exit from container) 
+docker run –itd centos ( as centos need a process to run, this will run process inside and detached )
+Docker stop containerID
+Docker start containerID
+Docker restart containerID
+Docker rm containerID ( Remove container)
+Docker rm containerID ( running container can’t be removed)
+Docker rm -f containerID (Remove all – running as well) 
+Docker rm -f containerID1 containerID2 (removing multiple container) 
+Docker ps –aq (List containerIDs) 
+Docker rm –f ‘docker ps -aq’  (Remove all container in one go………) 
+Docker image rm imageID (Remove Images) 
+
+
+ 
+
+
+
+
+
+
