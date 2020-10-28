@@ -28,7 +28,7 @@ Docker run –d –p 9080:80 nginx   (exposing customized port)
 Docker exec –it containerID /bin/bash  (getting inside into running container) 
 docker exec containerID touch test.txt  ( running command inside container without getting into it) 
 Docker exec containerID ls –l /root 
-Build Own Images - There are 2 ways 
+===================================Build Own Images - There are 2 ways =================================
 Manual Process ( docker commit) 
 Automated process (Dockerfile … docker build ) 
 Manual Process============ Need base image and build on that 
@@ -42,6 +42,26 @@ Docker run –it ubuntu /bin/bash  ( run container in interactive mode)
 	ctrl pq 
 Docker ps 
 Docker commit –m “making image” containerID NewImageName  ( convert container to image ) 
+============================================= Build Image Automatically ============
+Dockerfile (instructions in a file) 
+Touch dockerfile 
+	FROM ubuntu:18.04		
+	RUN apt-get update
+	RUN touch text.txt
+	RUN echo “This my image created automatically” >>text.txt
+	RUN apt-get install –y vim 
+	
+Save the file. 
+Docker build –f dockerfile  -t newimagename:v2 .     (dir path “.” means current) 
+---
+(docker directives) 
+FROM (which image you like to pull) and runs as container in interactive mode
+RUN (instructing which command to run) 
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+
+
+
+
 
 
 
