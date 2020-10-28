@@ -24,7 +24,10 @@ Docker rm -f containerID (Remove all – running as well)
 Docker rm -f containerID1 containerID2 (removing multiple container) 
 Docker ps –aq (List containerIDs) 
 Docker rm –f ‘docker ps -aq’  (Remove all container in one go………) 
-Docker image rm imageID (Remove Images) 
+Docker run –d –p 9080:80 nginx   (exposing customized port) 
+
+ 
+
 
 
  
