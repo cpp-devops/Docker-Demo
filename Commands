@@ -28,6 +28,23 @@ Docker run –d –p 9080:80 nginx   (exposing customized port)
 Docker exec –it containerID /bin/bash  (getting inside into running container) 
 docker exec containerID touch test.txt  ( running command inside container without getting into it) 
 Docker exec containerID ls –l /root 
+Build Own Images - There are 2 ways 
+Manual Process ( docker commit) 
+Automated process (Dockerfile … docker build ) 
+Manual Process============ Need base image and build on that 
+Docker pull ubuntu
+Note: we can’t make changes in image directly hence run it as container and make the changes
+Docker run –it ubuntu /bin/bash  ( run container in interactive mode) 
+	apt-get update 
+	touch text.txt (assumining no vi editor) 
+	vi text.txt 
+	apt-get install –y vim
+	ctrl pq 
+Docker ps 
+Docker commit –m “making image” containerID NewImageName  ( convert container to image ) 
+
+
+
 
 
  
