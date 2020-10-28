@@ -90,7 +90,20 @@ HEALTHCHECK: speciry a command to run in order to perform a custom health check 
 =================================
 
 
-Docker build –f dockerfile  -t newimagename:v2 .     (dir path “.” means context to current) 
+Docker build –f dockerfile  -t newimagename:v2 .     (dir path “.” means context to current) ]
+
+============Push image to docker hub============
+
+Create account on docker hub
+Create Public Repository
+Docker login
+Docker image ls
+Docker tag myimage:v1 myacc/myimage:v1 ( creating alias) 
+Docker push hub.docker.com/dockerdemo20 /myimage:v1
+Docker push dockerdemo20 /myimage:v1
+
+
+
 
 
 
